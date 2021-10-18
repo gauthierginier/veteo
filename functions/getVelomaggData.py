@@ -5,4 +5,3 @@ def getVeloMaggData():
     getVelomaggXml = requests.get(velomaggXmlUrl, allow_redirects=True)
     open('velomaggData.xml', 'wb').write(getVelomaggXml.content)
     return True
-getVeloMaggData()
